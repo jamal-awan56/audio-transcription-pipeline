@@ -1,0 +1,12 @@
+# Core STT engine (Whisper reimplemented on CTranslate2: faster, lower memory,
+# native segment/word timestamps, built-in VAD).
+faster-whisper>=1.0.0
+
+# Optional REST service layer (service.py only).
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+
+# System dependency (NOT pip-installable): ffmpeg + ffprobe must be on PATH.
+#   macOS:  brew install ffmpeg
+#   Ubuntu: sudo apt-get install -y ffmpeg
